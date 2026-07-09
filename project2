@@ -1,0 +1,20 @@
+# Expense Tracker
+
+print("===== Expense Tracker =====")
+
+total = 0
+
+while True:
+    expense = input("Enter expense amount (or type 'done' to finish): ")
+
+    if expense.lower() == "done":
+        break
+
+    expense = float(expense)
+    total = total + expense
+
+    print("Expense Added Successfully!")
+
+print("\n===== Expense Summary =====")
+print("Total Amount Spent:", total)
+print("Thank you for using Expense Tracker!")
